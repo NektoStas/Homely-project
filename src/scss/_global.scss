@@ -42,9 +42,7 @@ body {
             border-radius:10px;
             color: $burgerColor;
             transition: .3s color;
-           &:hover{
-            color:#242424;
-           }
+            
         }
         &.active{
             color: $mainColor;

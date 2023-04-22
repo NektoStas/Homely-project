@@ -97,10 +97,6 @@ body .rounded__btn {
   transition: 0.3s color;
 }
 
-body .rounded__btn:hover {
-  color: #242424;
-}
-
 body .rounded.active {
   color: #150C01;
 }
@@ -385,22 +381,61 @@ body .rounded.active {
   transition: all 500ms ease-in-out;
 }
 
-.slide h3 {
-  position: absolute;
-  font-size: 24px;
-  bottom: 20px;
-  left: 20px;
+.wraper_hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
   margin: 0;
-  opacity: 0;
+  padding: 30px;
+  display: none;
 }
 
-.active {
+.wraper_hero h3 {
+  padding: 10px;
+  font-size: 42px;
+}
+
+.wraper_hero p {
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.rounded__btn {
+  width: 155px;
+  height: 46px;
+  background: #dc770b;
+  padding: 14px 30px;
+  border-radius: 10px;
+  color: #131418;
+  -webkit-transition: 0.3s color;
+  -o-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.rounded.active {
+  color: #150C01;
+}
+
+.rounded:hover {
+  color: #fff;
+}
+
+.active_hero {
   -webkit-box-flex: 10;
       -ms-flex: 10;
           flex: 10;
 }
 
-.slide.active h3 {
+.slide.active_hero .wraper_hero {
+  display: block;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in 0.4s;
   -o-transition: opacity 0.3s ease-in 0.4s;
